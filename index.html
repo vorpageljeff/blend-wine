@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blend Wine — Catálogo Digital Inteligente</title>
+  <meta name="description" content="Conceito demonstrativo de catálogo digital integrado ao WhatsApp para a Blend Wine." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
+</head>
+<body>
+  <div class="demo-bar"><strong>Conceito exclusivo</strong><span>Uma demonstração preparada pela Voragon para a Blend Wine</span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Blend Wine, início"><span class="brand-mark">B</span><span><b>Blend Wine</b><small>O vinho certo para a ocasião</small></span></a>
+    <nav aria-label="Navegação principal"><a href="#catalogo">Catálogo</a><a href="#experiencia">A experiência</a><a href="#pedido">Meu pedido</a></nav>
+    <a class="header-action" href="#pedido">Sacola <span id="header-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <img class="hero-image" src="assets/hero-vinhos.png" alt="Composição elegante de vinhos e espumantes" />
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <span class="eyebrow">Uma nova forma de escolher seu vinho</span>
+        <h1>Escolha com calma.<br /><em>Brinde o momento.</em></h1>
+        <p>Encontre o rótulo ideal por tipo, uva, faixa de preço ou ocasião. Monte seu pedido e converse com a equipe da Blend pelo WhatsApp.</p>
+        <div class="hero-actions"><a class="button primary" href="#catalogo">Explorar seleção</a><a class="button ghost" href="#experiencia">Como funciona</a></div>
+        <div class="hero-trust"><span>Curadoria especializada</span><span>Atendimento humano</span><span>Retirada ou entrega</span></div>
+      </div>
+      <span class="scroll-cue">DESCUBRA <i></i></span>
+    </section>
+
+    <section class="moment-strip" aria-label="Categorias em destaque">
+      <span>Para presentear</span><i></i><span>Para celebrar</span><i></i><span>Para harmonizar</span><i></i><span>Para descobrir</span>
+    </section>
+
+    <section class="catalog" id="catalogo">
+      <div class="section-heading">
+        <div><span class="eyebrow">Seleção Blend</span><h2>O vinho certo para <em>cada ocasião.</em></h2></div>
+        <p>Uma vitrine simples de pesquisar, criada para transformar curiosidade em um pedido completo.</p>
+      </div>
+      <div class="filter-panel" aria-label="Filtros do catálogo">
+        <label class="search-label"><span>Buscar</span><input id="search" type="search" placeholder="Nome, uva ou ocasião" /></label>
+        <label><span>Tipo</span><select id="category"><option value="all">Todos</option><option value="tinto">Vinhos tintos</option><option value="branco">Brancos e rosés</option><option value="espumante">Espumantes</option><option value="kit">Kits e presentes</option></select></label>
+        <label><span>Ocasião</span><select id="occasion"><option value="all">Todas</option><option value="jantar">Jantar</option><option value="presente">Presente</option><option value="celebrar">Celebração</option></select></label>
+        <label><span>Ordenar</span><select id="order"><option value="featured">Curadoria Blend</option><option value="low">Menor preço</option><option value="high">Maior preço</option></select></label>
+      </div>
+      <div class="quick-filters"><button class="active" data-quick="all">Todos</button><button data-quick="tinto">Tintos</button><button data-quick="branco">Brancos & rosés</button><button data-quick="espumante">Espumantes</button><button data-quick="kit">Presentes</button></div>
+      <div class="catalog-meta"><span><b id="result-count">6</b> sugestões encontradas</span><small>Produtos e valores ilustrativos para demonstração</small></div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="experience" id="experiencia">
+      <div class="experience-copy">
+        <span class="eyebrow">Do Instagram ao brinde</span>
+        <h2>Uma evolução natural da experiência que a Blend já oferece.</h2>
+        <p>Hoje, a marca já apresenta seus rótulos com cuidado no Instagram e em catálogos. A proposta reúne essa identidade em uma jornada própria, pesquisável e pronta para gerar pedidos organizados.</p>
+        <div class="steps">
+          <article><span>01</span><div><h3>Descobrir</h3><p>O cliente chega pelo Instagram e encontra a seleção em um único link.</p></div></article>
+          <article><span>02</span><div><h3>Escolher</h3><p>Filtra por tipo, ocasião ou preço e define as quantidades.</p></div></article>
+          <article><span>03</span><div><h3>Conversar</h3><p>O WhatsApp abre com o pedido pronto para a equipe confirmar.</p></div></article>
+        </div>
+      </div>
+      <div class="current-view">
+        <div class="phone phone-back"><img src="assets/01_perfil_instagram_blend_wine.jpeg" alt="Perfil atual da Blend Wine no Instagram" /></div>
+        <div class="phone phone-front"><img src="assets/02_linktree_catalogos_blend_wine.jpeg" alt="Linktree atual da Blend Wine" /></div>
+        <span class="evolution-tag">Presença atual<br /><b>+ jornada própria</b></span>
+      </div>
+    </section>
+
+    <section class="order-section" id="pedido">
+      <div class="order-copy">
+        <span class="eyebrow">Pedido organizado</span>
+        <h2>O atendimento recebe <em>o contexto completo.</em></h2>
+        <p>Itens, quantidades, preferência de entrega e observações chegam reunidos. A equipe continua próxima e confirma disponibilidade, valor final, pagamento e entrega pelo WhatsApp.</p>
+        <div class="message-example"><span>Mensagem preparada automaticamente</span><p>Olá, Blend Wine! Montei este pedido no catálogo:</p><p>• 2× Espumante Brut 130<br />• 1× Seleção Malbec</p><p><b>Preferência:</b> retirada na loja<br /><b>Observação:</b> é para presente.</p></div>
+      </div>
+      <div class="order-card">
+        <div class="order-header"><div><small>Minha seleção</small><strong id="order-title">Nenhum item selecionado</strong></div><button id="clear-order" type="button">Limpar</button></div>
+        <div id="order-items" class="order-items"><p class="empty">Escolha um rótulo no catálogo para montar seu pedido.</p></div>
+        <fieldset><legend>Como prefere receber?</legend><label><input type="radio" name="delivery" value="Retirada na loja" checked /> Retirada</label><label><input type="radio" name="delivery" value="Entrega" /> Entrega</label></fieldset>
+        <label class="address">Endereço para entrega<input id="address" type="text" placeholder="Rua, número e bairro" disabled /></label>
+        <label class="notes">Observações<textarea id="notes" rows="2" placeholder="Ex.: embalagem para presente"></textarea></label>
+        <div class="order-total"><span>Total estimado</span><strong id="total">R$ 0,00</strong></div>
+        <button class="whatsapp-button" id="whatsapp" type="button">Ver mensagem para o WhatsApp</button>
+        <small class="order-note">Demonstração: nenhuma mensagem será enviada.</small>
+      </div>
+    </section>
+
+    <section class="possibilities">
+      <div class="section-heading"><div><span class="eyebrow">Uma base que pode crescer</span><h2>Começa simples. <em>Evolui com a Blend.</em></h2></div></div>
+      <div class="possibility-grid"><article><span>01</span><h3>Atualização de catálogo</h3><p>Produtos, preços e destaques sempre organizados.</p></article><article><span>02</span><h3>Kits personalizados</h3><p>Presentes, eventos, casamentos e datas especiais.</p></article><article><span>03</span><h3>Recomendações</h3><p>Sugestões por ocasião, paladar e harmonização.</p></article><article><span>04</span><h3>Novas integrações</h3><p>Estoque, pagamento, CRM e clube de assinatura.</p></article></div>
+    </section>
+
+    <section class="closing">
+      <div><span class="eyebrow">Próximo passo</span><h2>Vamos desenhar a experiência ideal para a Blend?</h2><p>Uma conversa curta para entender produtos, rotina de atualização, entrega e prioridades da primeira versão.</p><a class="button primary" href="mailto:contato@voragon.com.br">Conversar sobre o projeto</a></div>
+      <div class="voragon-signature"><img src="assets/logo_voragon_oficial.png" alt="Voragon" /><span>Consultoria e sistemas sob demanda</span><strong>Jefferson Vorpagel</strong><small>voragon.vercel.app · @vorpageljeff</small></div>
+    </section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">B</span><span><b>Blend Wine</b><small>Conceito demonstrativo</small></span></div><p>Proposta visual preparada pela Voragon. Não representa uma loja oficial em operação.</p></footer>
+
+  <dialog id="preview"><button class="close" aria-label="Fechar">×</button><span>Prévia da mensagem</span><pre id="message-preview"></pre><button class="button primary close-action">Fechar prévia</button></dialog>
+  <script src="script.js"></script>
+</body>
+</html>

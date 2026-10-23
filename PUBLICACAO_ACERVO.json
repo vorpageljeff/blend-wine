@@ -1,0 +1,28 @@
+{
+  "data": "2026-10-23",
+  "origem": "Voragon_Comercial/prototipos/blend-wine",
+  "arquivos_incluidos": 16,
+  "exclusoes": [
+    {
+      "path": "apresentacao-blend-wine.pdf",
+      "reason": "runtime/private/generated format"
+    },
+    {
+      "path": "demonstracao-blend-wine.zip",
+      "reason": "runtime/private/generated format"
+    },
+    {
+      "path": "CONTEXTO_CONTINUIDADE.md",
+      "reason": "private operational documentation"
+    },
+    {
+      "path": "apresentacao-blend-wine.mp4",
+      "reason": "runtime/private/generated format"
+    },
+    {
+      "path": "demonstracao-blend-wine 2.zip",
+      "reason": "runtime/private/generated format"
+    }
+  ],
+  "nota": "Publicação de acervo. Credenciais, dados operacionais, sessões e backups não foram incluídos. Não é release de produção."
+}
